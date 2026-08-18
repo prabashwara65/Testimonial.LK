@@ -1,0 +1,289 @@
+:root {
+    --light: 80;
+    /* the threshold at which colors are considered "light." Range: integers from 0 to 100,
+  recommended 50 - 70 */
+    --threshold: 60;
+}
+
+.invalid-feedback {
+    display: initial !important;
+}
+
+.sidebar-logo a .logo-text {
+    color: #7a7f82 !important;
+}
+
+#flash-message-container {
+    display: none;
+}
+
+.json-beautify {
+    background: #F5F5F5;
+    padding: 10px;
+}
+
+.dashboard-count {
+    font-size: 20px;
+}
+
+.dashboard-card-icon {
+    font-size: 30px !important;
+}
+
+.bootstrap-tagsinput {
+    width: 100%;
+}
+
+.checkbox label::before {
+    border: 1px solid #a4a5a7;
+}
+
+.dropdown-toggle.btn-light {
+    background-color: #ffffff !important;
+    border-color: #ced4da !important;
+}
+
+.progress {
+    height: 1rem;
+}
+
+#table-holder {
+    box-shadow: 0 0 11px -5px;
+}
+
+.sidebar {
+    box-shadow: 0 0 14px -7px;
+}
+
+.sidebar-menu > li.dropdown ul.dropdown-menu {
+    background-color: #2196f30f;
+}
+
+.header {
+    background-color: #BBDEFB;
+    box-shadow: 0 -7px 15px 0px #000000;
+}
+
+h2.kpi-number {
+    font-size: 40px;
+}
+
+.leaflet-top {
+    z-index: 402 !important;
+}
+
+.card.kpi {
+    box-shadow: 0 0 7px 1px #E0E0E0;
+}
+
+.bootstrap-tagsinput span.tag {
+    background-color: #757575;
+    padding: 1px 8px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.required-star::after {
+    color: red;
+    content: '*';
+    font-size: 11px;
+    vertical-align: super;
+}
+
+.details-label {
+    width: 112px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.fc-event-container {
+    cursor: pointer;
+}
+
+.call-center-bg-gray {
+    background-color: #FAFAFA;
+}
+
+/* Star rating start */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -10;
+    opacity: 0;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/* Star rating end */
+
+/* Toggle START */
+.toggle {
+    display:flex;
+    position:relative;
+    width:7.5rem;
+    height:2.5rem;
+    background:white;
+    align-self:center;
+    user-select:none;
+    border-radius: 25px;
+    box-shadow: 0 0 7px -3px #9E9E9E;
+}
+
+.toggle:after, .toggle:before {
+    flex:1;
+    text-align:center;
+    line-height:2.5rem;
+}
+.toggle:after {
+    content:"ON";
+}
+.toggle:before {
+    content:"OFF";
+}
+
+.toggle input { display:none; }
+
+.toggle label {
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    perspective:1000;
+    cursor:pointer;
+}
+
+.toggle .card {
+    position:relative;
+    background:limegreen;
+    transition:.4s;
+    width:50%;
+    height:2.5rem;
+    pointer-events:none;
+}
+
+.toggle input:checked + .toggle label .card { background:tomato; }
+
+.flip {
+    transform:perspective(200) rotateY(0);
+    transform-origin:center right;
+    transform-style:preserve-3d;
+}
+
+.toggle input:checked + .toggle label .flip {
+    transform:perspective(200) rotateY(180deg);
+}
+
+.grow {
+    animation:grow-rev .4s 1 both;
+}
+
+.toggle input:checked + label .grow {
+    animation:grow .4s 1 both;
+}
+@keyframes grow {
+    50%{ transform:translateX(1.875rem) scale(2) }
+    to { transform:translateX(3.75rem); }
+}
+
+@keyframes grow-rev {
+    from { transform:translateX(3.75rem); }
+    50%{ transform:translateX(1.875rem) scale(2) }
+    to { transform:translateX(0rem); }
+}
+
+.slide2 { overflow:hidden; }
+.slide2 .card {
+    transform:translate(0);
+    background:transparent;
+    box-shadow:
+            -3.75rem 0 limegreen,
+            3.75rem 0 tomato;
+}
+.slide2 input:checked + label .card {
+    transform:translateX(3.75rem);
+    background:transparent;
+}
+
+.slide2 .card {
+    border-radius: 0;
+    border: none;
+}
+/* Toggle END */
+
+.brand.card {
+    box-shadow: 0 0 18px #E0E0E0;
+    -webkit-transition: transform 0.1s;
+    -moz-transition: transform 0.1s;
+    -ms-transition: transform 0.1s;
+    -o-transition: transform 0.1s;
+    transition: transform 0.1s;
+}
+
+.brand.card:hover {
+    box-shadow: 0 0 19px -3px #E0E0E0;
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+
+.yellow-seperator {
+    width: 30%;
+    background-color: #fed671;
+    margin: 0 auto;
+    height: 1px;
+}
+
+.dashboard-brand-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.no-image {
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.record {
+    font-size: 16px !important;
+    line-height: 2.5 !important;
+}
+
+.dashboard .card {
+    margin-bottom: 1.25rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.dashboard .count {
+    color: #fff;
+}

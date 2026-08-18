@@ -1,0 +1,7 @@
+{
+  "php.executablePath": "C:\\php80\\php.exe",
+  "php.validate.executablePath": "C:\\php80\\php.exe",
+  "terminal.integrated.env.windows": {
+    "Path": "C:\\php80;${env:Path}"
+  }
+}

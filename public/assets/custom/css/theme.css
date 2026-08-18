@@ -1,0 +1,225 @@
+/* Added to customize the theme colors */
+:root {
+	--main-color: #ffffff;
+
+	--button-success-color: #fdbb17;
+	--button-success-border-color: #fdbb17;
+	--button-success-hover-color: #dfa002;
+	--button-success-active-color: #c68e02;
+
+	--button-info-color: coral;
+	--button-info-border-color: coral;
+	--button-info-hover-color: coral;
+	--button-info-active-color: coral;
+}
+
+.header {
+	background-color: var(--main-color);
+}
+
+.nav-left {
+	background-color: #606060;
+	margin-left: 0px !important;
+}
+
+.header .header-container .nav-left > li > a {
+	color: #ffffff;
+	padding: 0 25px;
+}
+
+.header .header-container .nav-left > li > a:hover {
+	color: #ffffff;
+}
+
+.title-color{
+    color: black;
+}
+
+.sidebar-logo{
+    background-color: #f8f8f8;
+}
+
+.sidebar-logo a .logo-text {
+    color: #ffffff !important;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #e49500 !important;
+    border-color: #e49500 !important;
+}
+
+sidebar ul.dropdown-menu {
+	background: rgba(227, 242, 253, 0.36) !important;
+}
+
+.main-content {
+	background-color: #fafafa !important;
+}
+
+.filter-form-holder > div {
+	padding: 14px;
+	margin: 0;
+	margin-bottom: 12px;
+	background: #ffffff;
+	box-shadow: 0 0 11px -5px;
+}
+
+.nav-item {
+	border-bottom: 1px solid #f1f0e5c9;
+}
+
+/*.btn-success {*/
+/*color: #333;*/
+/*background-color: var(--button-success-color);*/
+/*border-color: var(--button-success-color);*/
+/*}*/
+
+/*.btn-success:hover {*/
+/*color: #333;*/
+/*background-color: var(--button-success-hover-color);*/
+/*border-color: var(--button-success-hover-color);*/
+/*}*/
+
+/*.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {*/
+/*color: #fff;*/
+/*background-color: var(--button-success-active-color);*/
+/*border-color: var(--button-success-active-color);*/
+/*}*/
+
+/*.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {*/
+/*box-shadow: 0 0 0 0.2rem var(--button-success-active-color);*/
+/*}*/
+
+.dashboard-card {
+	border-radius: 10px;
+	box-shadow: 5px 4px 5px #e2e2e2;
+}
+
+.dashboard-count {
+	font-size: 50px;
+}
+
+.c-green-500 {
+	color: #ffffff !important;
+}
+
+.c-red-500 {
+	color: #ffffff !important;
+}
+
+.c-purple-500 {
+	color: #ffffff !important;
+}
+
+.c-blue-500 {
+	color: #ffffff !important;
+}
+
+.bgc-green-50,
+.bgc-red-50,
+.bgc-purple-50,
+.bgc-blue-50 {
+	background-color: transparent !important;
+}
+
+.lh-1 {
+	color: #ffffff;
+}
+
+.card-design {
+	box-shadow: 5px 4px 5px #c3c3c3;
+}
+
+.table-text-color {
+	color: #8a8a8a !important;
+}
+
+.dataTables_filter input {
+	border-radius: 20px !important;
+	border-color: #d18408 !important;
+}
+
+.progress-color {
+    background-color: #f38006 !important;
+}
+
+.success-color{
+    background-color: #03b554 !important;   
+}
+
+.btn-light {
+    color: #000000 !important;
+}
+.excel-btn{
+	color: #ffffff !important;
+    background-color: #017b06 !important;
+    border-color: #f8f9fa !important;
+}
+
+.cancel-btn-color{
+    background-color: red;
+    color: white;
+}
+
+.sidebar-link:hover{
+	background-color: #2196f3 !important;
+	color: #ffffff !important;
+}
+
+.dropdown-toggle:hover{
+	background-color: #2196f3 !important;
+	color: #ffffff !important;
+}
+
+.first-card {
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+	background-image: linear-gradient(-228deg, #de9104, rgb(255, 190, 7)) !important;
+}
+
+.second-card {
+	background-image: linear-gradient(-228deg,  #9906ab,#837aff) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+.third-card {
+	background-image: linear-gradient(-228deg,#016d27, #05b942 ) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+
+.fourth-card {
+	background-image: linear-gradient(-228deg,#a50792, #ef0dd1) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+
+.fifth-card {
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+	background-image: linear-gradient(-228deg, #037369, #26A69A) !important;
+}
+
+.sixth-card {
+	background-image: linear-gradient(-228deg, #bd0644,#EC407A) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+.seventh-card {
+	background-image: linear-gradient(-228deg,#b93b13, #FF5722 ) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+
+.eight-card {
+	background-image: linear-gradient(-228deg,#495c65, #607D8B) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+
+.ninth-card {
+	background-image: linear-gradient(-228deg,#263796, #5f6ebd) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+
+.ten-card {
+	background-image: linear-gradient(-228deg,#2a79bd, #5f6ebd) !important;
+	/* background-image: linear-gradient(-176deg, #696868, rgb(0, 0, 0)) !important; */
+}
+
+.feedback-card-color{
+	background-color: #efe4cb !important;
+}
