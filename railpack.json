@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "provider": "php",
+  "buildAptPackages": [
+    "libpng-dev",
+    "libjpeg62-turbo-dev",
+    "libfreetype6-dev",
+    "libwebp-dev"
+  ]
+}
