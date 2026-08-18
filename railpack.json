@@ -1,3 +1,4 @@
+cat > railpack.json <<'EOF'
 {
   "$schema": "https://schema.railpack.com",
   "provider": "php",
@@ -6,5 +7,13 @@
     "libjpeg62-turbo-dev",
     "libfreetype6-dev",
     "libwebp-dev"
-  ]
+  ],
+  "steps": {
+    "build": {
+      "commands": [
+        "install-php-extensions gd"
+      ]
+    }
+  }
 }
+EOF
