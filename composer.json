@@ -47,7 +47,6 @@
             "Modules\\": "Modules/"
         },
         "classmap": [
-            "database/seeds",
             "database/factories"
         ],
         "files": [
