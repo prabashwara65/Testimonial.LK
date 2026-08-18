@@ -1,4 +1,3 @@
-cat > railpack.json <<'EOF'
 {
   "$schema": "https://schema.railpack.com",
   "provider": "php",
@@ -16,4 +15,3 @@ cat > railpack.json <<'EOF'
     }
   }
 }
-EOF
