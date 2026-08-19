@@ -352,6 +352,8 @@ class CreateDomainTables extends Migration
             $table->unsignedBigInteger('vendor_company_id')->nullable();
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
+
+            $table->primary(['user_id', 'reward_id']);
         });
 
         Schema::create('incentives', function (Blueprint $table) {
