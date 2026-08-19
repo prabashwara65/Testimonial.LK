@@ -71,14 +71,5 @@
     </div>
 </div>
 
-<script>
-    $('.loginForm').keypress((e) => {
-
-        // Enter key corresponds to number 13
-        if (e.which === 13) {
-            $('.loginForm').submit();
-        }
-    })
-</script>
 @yield('script')
 @endsection

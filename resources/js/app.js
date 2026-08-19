@@ -6,6 +6,15 @@
 
 require('./bootstrap');
 
+window.jQuery(function ($) {
+    $(document).on('keydown', '.loginForm input', function (event) {
+        if (event.which === 13) {
+            event.preventDefault();
+            $(this).closest('form').trigger('submit');
+        }
+    });
+});
+
 window.Vue = require('vue');
 
 /**

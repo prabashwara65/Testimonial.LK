@@ -16,6 +16,13 @@ $.fn.serializeObject = function(){
 };
 
 $(function () {
+    $(document).on('keydown', '.loginForm input', function(event) {
+        if (event.which === 13) {
+            event.preventDefault();
+            $(this).closest('form').trigger('submit');
+        }
+    });
+
     // this will show popup notifications for actions results on page load
     if( $('#flash-message-container').length )
     {
