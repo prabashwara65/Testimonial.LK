@@ -49775,6 +49775,14 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+window.jQuery(function ($) {
+  $(document).on('keydown', '.loginForm input', function (event) {
+    if (event.which === 13) {
+      event.preventDefault();
+      $(this).closest('form').trigger('submit');
+    }
+  });
+});
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
