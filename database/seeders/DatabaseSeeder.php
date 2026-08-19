@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -12,16 +14,22 @@ use App\Models\Admin;
 
 class DatabaseSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
         if (Region::count() === 0) {
-            $asia = Region::create(['region' => 'Asia']);
-            $europe = Region::create(['region' => 'Europe']);
+            $asia = Region::create([
+                'region' => 'Asia'
+            ]);
+
+            $europe = Region::create([
+                'region' => 'Europe'
+            ]);
 
             $sriLanka = Country::create([
                 'region_id' => $asia->id,
                 'country' => 'Sri Lanka',
             ]);
+
             Country::create([
                 'region_id' => $europe->id,
                 'country' => 'United Kingdom',
@@ -32,6 +40,7 @@ class DatabaseSeeder extends Seeder
                 'country_id' => $sriLanka->id,
                 'province' => 'Western',
             ]);
+
             Province::create([
                 'region_id' => $asia->id,
                 'country_id' => $sriLanka->id,
@@ -44,6 +53,7 @@ class DatabaseSeeder extends Seeder
                 'province_id' => $western->id,
                 'district' => 'Colombo',
             ]);
+
             District::create([
                 'region_id' => $asia->id,
                 'country_id' => $sriLanka->id,
@@ -62,6 +72,7 @@ class DatabaseSeeder extends Seeder
                 ['name' => 'star-4', 'value' => 'Very Good'],
                 ['name' => 'star-5', 'value' => 'Excellent'],
             ];
+
             foreach ($settings as $setting) {
                 Setting::create($setting);
             }
@@ -69,7 +80,14 @@ class DatabaseSeeder extends Seeder
 
         if (DB::table('question_types')->count() === 0) {
             $now = now();
-            foreach (['Text', 'Single Select', 'Multi Select', 'Star Rating', 'Textarea'] as $type) {
+
+            foreach ([
+                'Text',
+                'Single Select',
+                'Multi Select',
+                'Star Rating',
+                'Textarea'
+            ] as $type) {
                 DB::table('question_types')->insert([
                     'type' => $type,
                     'created_at' => $now,
@@ -80,7 +98,11 @@ class DatabaseSeeder extends Seeder
 
         if (Admin::count() === 0) {
             $asia = Region::first();
-            $country = Country::where('country', 'Sri Lanka')->first();
+
+            $country = Country::where(
+                'country',
+                'Sri Lanka'
+            )->first();
 
             Admin::create([
                 'name' => 'Super',
